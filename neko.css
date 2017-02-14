@@ -1,0 +1,68 @@
+body {margin: 0;padding: 0; font-family: sans-serif;}
+
+/*HEADER*/
+
+header {padding: 8% 0%; background: #292929;width: 100%}
+header h1 {text-align: center;color: #fff;}
+
+/*END HEADER*/
+
+
+/*SETINGAN NAVIGASI*/
+
+nav {background: #454545;color: #fff;width: 100%}
+nav ul {margin: 0;padding: 0%;overflow: hidden;transition: 0.7s;text-align: center;}
+nav ul li {display: inline-block;padding:	1.4% 1.8%}
+nav ul li:hover {background: #292929;}
+
+a {text-decoration: none;color: #fff;padding: 0;margin: 0;padding: 0% 0.5%}
+.handle {width: 100%;background: #292929;padding: 5% 0%;cursor: pointer;display: none;}
+.handle p {margin: 0;padding: 0% 2.6%}
+
+/*END SETINGAN NAVIGASI*/
+
+
+/*SET ARTICLE*/
+article {margin-top: 1.5%}
+article .col1, .col2, .col3 {width: 33.33%;float: left;}
+article .col1 {background: red}
+article .col2 {background: blue}
+article .col3 {background: green}
+
+.wrapper-article {width: 90%;margin: 0 auto}
+
+.inner {padding: 0px 1.9%}
+
+
+/*END SET ARTICLE*/
+
+
+
+
+
+/*MAIN MEDIA SCREEN*/
+
+@media screen and (max-width: 855px) {
+	article .col1, .col2 {width: 50%;float: left;}
+	.col3 {padding-top:1.6%; float: none;width: 100%;}
+	nav ul li {padding: 2%}
+}
+
+@media screen and (max-width: 654px) {
+		/*NAV RESPON*/
+	nav ul {max-height: 0em;}
+	nav ul li {width: 100%;padding: 6% 0%;}
+	.handle {display: block;background: #303030;}
+	.handle p {padding: 0% 5%;}
+	.showing {max-height: 20em}
+	a {padding: 0%}
+		/*END NAV*/
+
+		/*ARTICLE RESPON*/
+	article .col1, .col2, .col3  {float: none;width: 100%;padding: 2.6% 0%}
+
+
+
+		/*END ARTICLE*/
+}
+
